@@ -144,7 +144,7 @@ body.home #top-bar {
 }
 
 #search-form-wrapper button:hover{
-  background-color: #0075be !important;
+  background-color: @blueDark !important;
 }
 
 header .background-gradient{
@@ -175,14 +175,17 @@ body:not(.home) header#top-bar .background-gradient {
   position: relative;
   width: 80%;
   height: 82px;
-  background-color: blue;
+  background-color: @blueDark;
   top: 180px;
   left: 10%;
   right: 10%;
   border-radius: 6px;
   box-shadow: 0 4px 14px -8px #000;
 }
-body:not(.home) header#top-bar>nav{
+body:not(.home) header#top-bar #logo {
+  top: 38px;
+}
+body:not(.home) header#top-bar>nav {
   position: relative;
   top: 116px;
   right: 10%;
@@ -190,7 +193,7 @@ body:not(.home) header#top-bar>nav{
 body:not(.home) #search-form-wrapper {
   top: 232px;
 }
-body:not(.home) #search-bar{
+body:not(.home) #search-bar {
   position: relative;
   top: 116px;
   left: 10%;
