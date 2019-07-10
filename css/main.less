@@ -77,15 +77,11 @@
 //   - Like .throbbing
 
 a{
-  color: #fe6602;
+  color: @linkColor;
 }
 
 body, html{
   background-color: #fafafa;
-}
-
-body:not(.home) #top-bar {
-  background: #0075be;
 }
 
 body.home #top-bar {
@@ -167,6 +163,37 @@ header .background-gradient{
 header #logo {
   position: relative;
   z-index:1;
+}
+
+/* Styles for header when not in home page */
+
+body:not(.home) #top-bar {
+  background: white;
+  height: 222px;
+}
+body:not(.home) header#top-bar .background-gradient {
+  position: relative;
+  width: 80%;
+  height: 82px;
+  background-color: blue;
+  top: 180px;
+  left: 10%;
+  right: 10%;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px -8px #000;
+}
+body:not(.home) header#top-bar>nav{
+  position: relative;
+  top: 116px;
+  right: 10%;
+}
+body:not(.home) #search-form-wrapper {
+  top: 232px;
+}
+body:not(.home) #search-bar{
+  position: relative;
+  top: 116px;
+  left: 10%;
 }
 
 #popular-this-week{
