@@ -93,6 +93,12 @@ body.home #top-bar {
   position: relative;
 }
 
+#top-bar .header-branding-region {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #search-bar {
   white-space: nowrap;
   margin-left: 10px;
@@ -172,18 +178,9 @@ body:not(.home) #top-bar {
   height: 222px;
 }
 body:not(.home) header#top-bar .background-gradient {
-  position: relative;
-  width: 80%;
-  height: 82px;
   background-color: @blueDark;
-  top: 180px;
-  left: 10%;
-  right: 10%;
   border-radius: 6px;
   box-shadow: 0 4px 14px -8px #000;
-}
-body:not(.home) header#top-bar #logo {
-  top: 38px;
 }
 body:not(.home) header#top-bar>nav {
   position: relative;
