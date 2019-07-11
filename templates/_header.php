@@ -56,7 +56,7 @@
 
   </div>
 
-  <div class="header-branding-region">
+  <div id="header-branding-region">
 
     <?php if (sfConfig::get('app_toggleTitle')): ?>
       <h1 id="site-name">
