@@ -33,6 +33,11 @@
   <div class="background-gradient"></div>
   
   <nav>
+    <div id="search-bar">
+
+      <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
+
+    </div>
 
     <?php echo get_component('menu', 'userMenu') ?>
 
@@ -45,16 +50,9 @@
     <?php echo get_component('menu', 'clipboardMenu') ?>
 
     <?php echo get_component('menu', 'mainMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
-
   </nav>
 
   <?php echo get_component('search', 'box') ?>
-
-  <div id="search-bar">
-
-    <?php echo get_component('menu', 'browseMenu', array('sf_cache_key' => $sf_user->getCulture().$sf_user->getUserID())) ?>
-
-  </div>
 
   <div id="header-branding-region">
 
