@@ -429,7 +429,7 @@ nav > div {
     right: 0px;
     position: absolute;
     top: 0px;
-    background-color: #666;
+    background-color: @blueDark;
     color: white;
     margin-top: 0px;
     font-size: 1.1em;
@@ -441,6 +441,10 @@ nav > div {
       content:"\f002";
     }
 
+
+    &:hover {
+      background-color: lighten(@blueDark, 5%);
+    }
     span {
       .hide();
     }
