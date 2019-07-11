@@ -31,21 +31,23 @@
 
 <header id="top-bar">
   <div class="background-gradient"></div>
-  <?php if (sfConfig::get('app_toggleLogo')): ?>
-    <?php echo link_to(image_tag('logo', array('alt' => 'AtoM')), '@homepage', array('id' => 'logo', 'rel' => 'home')) ?>
-  <?php endif; ?>
+  <div class="header-branding-region">
+    <?php if (sfConfig::get('app_toggleLogo')): ?>
+      <?php echo link_to(image_tag('logo', array('alt' => 'AtoM')), '@homepage', array('id' => 'logo', 'rel' => 'home')) ?>
+    <?php endif; ?>
 
-  <?php if (sfConfig::get('app_toggleTitle')): ?>
-    <h1 id="site-name">
-      <?php echo link_to('<span>'.esc_specialchars(sfConfig::get('app_siteTitle')).'</span>', '@homepage', array('rel' => 'home', 'title' => __('Home'))) ?>
-    </h1>
-  <?php endif; ?>
+    <?php if (sfConfig::get('app_toggleTitle')): ?>
+      <h1 id="site-name">
+        <?php echo link_to('<span>'.esc_specialchars(sfConfig::get('app_siteTitle')).'</span>', '@homepage', array('rel' => 'home', 'title' => __('Home'))) ?>
+      </h1>
+    <?php endif; ?>
 
-  <?php if (sfConfig::get('app_toggleDescription')): ?>
-    <div id="site-slogan">
-      <span><?php echo esc_specialchars(sfConfig::get('app_siteDescription')) ?></span>
-    </div>
-  <?php endif; ?>
+    <?php if (sfConfig::get('app_toggleDescription')): ?>
+      <div id="site-slogan">
+        <span><?php echo esc_specialchars(sfConfig::get('app_siteDescription')) ?></span>
+      </div>
+    <?php endif; ?>
+  </div>
 
   <nav>
 
