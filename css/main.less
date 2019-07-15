@@ -144,7 +144,9 @@ body.home #wrapper .row>.span9 {
   form {
     display: flex;
     margin: 0px;
-    transition: boxShadow ease 0.5s;
+    transition: box-shadow ease 0.5s, top ease 0.6s;
+    top: 0px;
+    position: relative;
   }
 
   input[name="query"]{
@@ -164,6 +166,7 @@ body.home #wrapper .row>.span9 {
   }
   form.active {
     box-shadow: 0px 10px 22px -18px #000;
+    top: -19px;
 
     input[name="query"]{
       border-bottom-left-radius: 0px !important;
