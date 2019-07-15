@@ -78,5 +78,3 @@
 
 </header>
 
-<?php echo get_component('default', 'popular', array('limit' => 10)) ?>
-
