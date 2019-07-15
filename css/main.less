@@ -76,7 +76,7 @@
 // Review Caribou and Trillium code in case I forgot something
 //   - Like .throbbing
 
-a{
+a {
   color: @linkColor;
 }
 
@@ -98,6 +98,13 @@ body:not(.home) #top-bar #search-form-wrapper {
 }
 body:not(.home) #top-bar #header-branding-region {
   margin-top: -10px;
+}
+
+body.home #wrapper .row>.span3 {
+  display: none;
+}
+body.home #wrapper .row>.span9 {
+  width: 100% !important;
 }
 
 #top-bar {
@@ -319,6 +326,7 @@ header #logo{
   h5,
   h6 {
     color: @headingsColor;
+    margin-left: 42px;
   }
 }
 
@@ -439,13 +447,14 @@ header #logo{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px -32px;
 
   .home-box {
-    height: 200px;
-    flex-basis: 23%;
+    height: 220px;
+    flex-basis: 27%;
     background: @blueDark;
-    border-radius: 4px;
-    padding: 12px;
+    border-radius: 3px;
+    padding: 20px;
     border: 2px solid white;
     box-shadow: 0px 0px 0px 8px @blueDark;
     margin: 20px;
