@@ -19,7 +19,7 @@
 @topBarButtonHoverColor: @blue;
 
 #top-bar {
-  height: 50px;
+  height: 52px;
 }
 
 #top-bar>nav {
@@ -74,7 +74,8 @@ header #logo {
   margin: 12px 11px 0 0;
   background-color: lighten(@blueDark, 5%);
   color: white;
-  .border-radius(4px);
+  .border-radius(8px);
+  border: solid 3px #b9d8eb;
   font-size: 13px;
   line-height: 14px;
   text-decoration: none;
@@ -200,8 +201,9 @@ nav > div {
 #browse-menu {
   float: left;
   > button {
-    .border-radius(4px);
-    background-color: lighten(@blueDark, 5%);
+    .border-radius(8px);
+    border: solid 3px #b9d8eb;
+    background-color: lighten(@blueDark, 5%);  
   }
 }
 
@@ -222,6 +224,8 @@ nav > div {
 #user-menu {
   > button {
     margin-left: 12px;
+    background-color: #002a44;
+    order: 5;
   }
   form {
     background: none;
@@ -278,7 +282,7 @@ nav > div {
     font-weight: normal;
     font-style: normal;
     text-align: center;
-    color: @grayLighter;
+    color: #b9d8eb;
     font-size: @side/2;
     position: absolute;
     top: 0;
