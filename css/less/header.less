@@ -78,10 +78,10 @@ header #logo {
   display: block;
   float: right;
   margin: 12px 11px 0 0;
-  background-color: lighten(@blueDark, 5%);
+  background-color: @blueDark;
   color: white;
   .border-radius(8px);
-  border: solid 3px #b9d8eb;
+  border: solid 1px #002a44;
   font-size: 13px;
   line-height: 14px;
   text-decoration: none;
@@ -207,7 +207,7 @@ nav > div {
   float: left;
   > button {
     .border-radius(8px);
-    border: solid 3px #b9d8eb;
+    border: solid 1px #002a44;
     background-color: lighten(@blueDark, 5%);  
   }
 }
@@ -225,12 +225,15 @@ nav > div {
     color: white;
   }
 }
+#browse-menu.open>button {
+  background-color: #002a44;
+}
 
 #user-menu {
+  order: 5;
+
   > button {
     margin-left: 12px;
-    background-color: #002a44;
-    order: 5;
   }
   form {
     background: none;
@@ -240,6 +243,9 @@ nav > div {
       .input-block-level();
     }
   }
+}
+#user-menu.open>button {
+  background-color: #002a44;
 }
 
 // Hide global search/replace node temporary
@@ -530,6 +536,7 @@ nav > div {
 
     a span {
       text-align: center;
+      font-weight: normal;
       max-width: auto;
     }
   }
@@ -537,6 +544,10 @@ nav > div {
   #site-slogan {
     margin: 0 -20px;
     padding: 0 20px;
+  }
+
+  #logo img {
+    height: 118px;
   }
 
   #wrapper {

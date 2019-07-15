@@ -205,7 +205,7 @@ header .background-gradient{
   height: 100%;
   z-index: 0;
   // background-image: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.3));
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .search-popover {
@@ -326,13 +326,22 @@ header #logo{
   background-image: none;
   margin-top: 60px;
 
-  h1,
+  h1 {
+    color: @headingsColor;
+    margin-left: 42px;
+  }
   h2,
-  h3,
-  h4,
+  h4 {
+    color: #313131;
+    margin-left: 42px;
+  }
+  h3 {
+    color: @blueDark;
+    margin-left: 42px;
+  }
   h5,
   h6 {
-    color: @headingsColor;
+    color: #13505b;
     margin-left: 42px;
   }
 }
@@ -475,7 +484,7 @@ header #logo{
     a, 
     a:hover,
     a:visited {
-      font-size: 26px;
+      font-size: 24px;
       color: white;
       cursor: pointer;
     }
