@@ -144,6 +144,7 @@ body.home #wrapper .row>.span9 {
   form {
     display: flex;
     margin: 0px;
+    transition: boxShadow ease 0.5s;
   }
 
   input[name="query"]{
@@ -158,6 +159,9 @@ body.home #wrapper .row>.span9 {
     margin: 0px;
   }
 
+  form:hover {
+    box-shadow: 0px 10px 22px -18px #000;
+  }
   form.active {
     box-shadow: 0px 10px 22px -18px #000;
 
