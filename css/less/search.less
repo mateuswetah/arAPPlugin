@@ -303,16 +303,24 @@ h1 {
   }
 
   .actions {
+    margin-bottom: 40px;
     .border-radius(0px);
     padding-left: 20px;
     text-align: center;
-    background-color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    align-items: flex-end;
 
     input {
       width: 20%;
       display: inline-block;
+    }
+    input.c-btn-submit {
+      width: 100%;
+      border-radius: 0;
+    }
+    input.c-btn-cancel {
+      margin-bottom: 12px;
     }
   }
 
@@ -588,13 +596,7 @@ h1 {
 
 // Similar to #content
 .advanced-search-section {
-  background-color: @white;
-  border: 1px solid @borderOutlineColor;
-  .border-radius(4px);
-  .box-shadow(0 1px 1px rgba(0, 0, 0, .2));
-  .actions {
-    margin-bottom: -20px;
-  }
+
 }
 
 #advanced-repository-filters {
