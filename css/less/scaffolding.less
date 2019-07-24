@@ -421,11 +421,14 @@ div#content > table.table {
   .facet-header {
     font-family: @sansFontFamily;
     background-color: @blueDark;
-    color: @white;
 
     h3 {
-      margin: 0;
-      font-weight: 600;
+      margin: 0 !important;
+      a,
+      a:hover {
+        color: @white;
+        font-weight: 600;
+      }
     }
   }
 
