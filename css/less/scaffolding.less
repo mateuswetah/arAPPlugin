@@ -414,22 +414,26 @@ div#content > table.table {
 
 #facets {
   margin-top: 20px;
-}
-
-.facet {
 
   h2 {
     margin-left: 0;
+    padding-left: 24px;
   }
+}
+
+.facet {
 
   .facet-header {
     font-family: @sansFontFamily;
     background-color: @blueDark;
 
     h3 {
-      margin: 0 !important;
+      margin-left: 0 !important;
+      padding-left: 24px;
+
       a,
-      a:hover {
+      a:hover,
+      a::after {
         color: @white !important;
         font-weight: 600;
       }
