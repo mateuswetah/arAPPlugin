@@ -217,7 +217,7 @@ th {
 // jQuery Masonry bricks
 // It's not working well with text, use images
 
-@brickWidth: 170px;
+@brickWidth: 240px;
 @brickPadding: 15px;
 
 .masonry {
@@ -256,14 +256,14 @@ th {
 
   &.brick-only-text {
     width: @brickWidth;
-    h4 {
+    background-color: @blueDark;
+
+    a {
       min-height: 100px;
-    }
-    &>a {
-      visibility: hidden;
-    }
-    & .bottom {
-      background: @blueDark;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding: 0px 12px;
     }
   }
 
@@ -300,36 +300,21 @@ th {
   }
 
   .bottom {
+    margin: 0 -15px -15px -15px;
+    padding: 8px 15px;
+    background-color: @blueDark;
+    color: @white;
+    display: flex !important;
+    flex-direction: column-reverse;
+    align-items: end;
     .clearfix();
-    padding: 15px;
-    position: relative;
-    top: 0;
-    height: calc(100% - 30px);
-    position: absolute;
-    background-color: rgba(30,30,30,0.7);
-    left: 0;
-    color: white;
-    font-size: 17px;
-    line-height: 22px;
-    word-wrap: anywhere;
-
-    &:bottom, &:after {
-      display: block;
-      content: "";
-      line-height: 0;
-      border-top: 1px solid white;
-      border-left: 168px solid white;
-      border-bottom: 1px solid white;
-      border-right: 1px solid white;
-      margin: 12px auto;
-    }
-
     p {
       margin: 0;
-      color: #666;
+      color: @grayLighter;
       .text-overflow();
     }
   }
+
 }
 
 // Table
