@@ -300,41 +300,36 @@ th {
   }
 
   .bottom {
-    margin: 0 -15px -15px -15px;
-    padding: 8px 15px;
-    background-color: #f2f0f0;
     .clearfix();
+    padding: 15px;
+    position: relative;
+    top: 0;
+    height: calc(100% - 30px);
+    position: absolute;
+    background-color: rgba(30,30,30,0.7);
+    left: 0;
+    color: white;
+    font-size: 17px;
+    line-height: 22px;
+    word-wrap: anywhere;
+
+    &:bottom, &:after {
+      display: block;
+      content: "";
+      line-height: 0;
+      border-top: 1px solid white;
+      border-left: 168px solid white;
+      border-bottom: 1px solid white;
+      border-right: 1px solid white;
+      margin: 12px auto;
+    }
+
     p {
       margin: 0;
       color: #666;
       .text-overflow();
     }
   }
-
-/*
-      padding: 15px;
-      position: relative;
-      top: 0;
-      height: calc(100% - 30px);
-      position: absolute;
-      background-color: rgba(30,30,30,0.7);
-      left: 0;
-      color: white;
-      font-size: 17px;
-      line-height: 22px;
-      word-wrap: anywhere;
-
-      &:bottom, &:after {
-        display: block;
-        content: "";
-        line-height: 0;
-        border-top: 1px solid white;
-        border-left: 168px solid white;
-        border-bottom: 1px solid white;
-        border-right: 1px solid white;
-        margin: 12px auto;
-      }
-  */
 }
 
 // Table
@@ -1119,7 +1114,7 @@ section .vcard:last-child > .field:last-child > div {
 
 .search-result {
 
-  padding: 10px;
+  padding: 18px;
   border-bottom: 1px solid @grayLighter;
   .clearfix();
 
