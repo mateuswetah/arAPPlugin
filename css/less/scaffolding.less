@@ -263,11 +263,12 @@ th {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
-      padding: 0px 12px;
+      padding: 0px;
+      margin: 12px;
 
       h4, h5 {
-        color: white;
-        margin: 0;
+        color: @white !important;
+        margin: 0 !important;
       }
     }
     .bottom {
@@ -284,7 +285,7 @@ th {
   padding: @brickPadding;
   margin-bottom: 15px;
 
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.5em;
 
   h4 {
@@ -311,9 +312,6 @@ th {
     padding: 8px 15px;
     background-color: @blueDark;
     color: @white;
-    display: flex !important;
-    flex-direction: column-reverse;
-    align-items: end;
     .clearfix();
     p {
       margin: 0;
