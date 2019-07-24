@@ -264,7 +264,7 @@ th {
       align-items: flex-end;
       justify-content: flex-end;
       padding: 0px;
-      margin: 12px;
+      margin: 12px 12px 0px 12px;
 
       h4, h5 {
         color: @white !important;
@@ -278,15 +278,23 @@ th {
 
   background-color: @white;
   @shadow: 0 1px 3px rgba(25, 25, 25, 0.4);
+  @shadowHover: 0 2px 6px rgba(25, 25, 25, 0.5);
   .box-shadow(@shadow);
+  transform: scale(1.0);
+  transition: scale ease 0.3s, shadow ease 0.3s;
 
   // Dimensions
   width: @brickWidth;
   padding: @brickPadding;
   margin-bottom: 15px;
 
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5em;
+
+  &:hover {
+    .box-shadow(@shadowHover);
+    transform: scale(1.1);
+  }
 
   h4 {
     font-size: 22px;
@@ -1105,7 +1113,7 @@ section .vcard:last-child > .field:last-child > div {
 .search-result {
 
   padding: 18px;
-  border-bottom: 1px solid @grayLighter;
+  border-bottom: 1px solid @grayLight;
   .clearfix();
 
   // First result with digital objects
