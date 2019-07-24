@@ -218,7 +218,7 @@ th {
 // It's not working well with text, use images
 
 @brickWidth: 240px;
-@brickPadding: 15px;
+@brickPadding: 0px;
 
 .masonry {
 
@@ -264,6 +264,14 @@ th {
       align-items: flex-end;
       justify-content: flex-end;
       padding: 0px 12px;
+
+      h4, h5 {
+        color: white;
+        margin: 0;
+      }
+    }
+    .bottom {
+      font-size: 0;
     }
   }
 
@@ -274,7 +282,7 @@ th {
   // Dimensions
   width: @brickWidth;
   padding: @brickPadding;
-  margin-bottom: @brickPadding;
+  margin-bottom: 15px;
 
   font-size: 11px;
   line-height: 1.5em;
@@ -300,7 +308,6 @@ th {
   }
 
   .bottom {
-    margin: 0 -15px -15px -15px;
     padding: 8px 15px;
     background-color: @blueDark;
     color: @white;
