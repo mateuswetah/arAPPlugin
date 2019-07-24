@@ -280,8 +280,8 @@ th {
   @shadow: 0 1px 3px rgba(25, 25, 25, 0.4);
   @shadowHover: 0 2px 6px rgba(25, 25, 25, 0.5);
   .box-shadow(@shadow);
-  transform: scale(1.0);
-  transition: scale ease 0.3s, shadow ease 0.3s;
+  transform: scale(0.98);
+  transition: transform ease 0.2s, shadow ease 0.2s;
 
   // Dimensions
   width: @brickWidth;
@@ -293,7 +293,7 @@ th {
 
   &:hover {
     .box-shadow(@shadowHover);
-    transform: scale(1.1);
+    transform: scale(1.0);
   }
 
   h4 {
@@ -420,6 +420,13 @@ div#content > table.table {
 
   .facet-header {
     font-family: @sansFontFamily;
+    background-color: @blueDark;
+    color: @white;
+
+    h3 {
+      margin: 0;
+      font-weight: 600;
+    }
   }
 
   .facet-body {
@@ -1210,7 +1217,7 @@ section .vcard:last-child > .field:last-child > div {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: @grayLight;
+    color: @grayDark;
     font-size: 90%;
 
     li {
@@ -1331,6 +1338,10 @@ section .vcard:last-child > .field:last-child > div {
 // View header
 .view-header-label {
   color: #666;
+
+  .btn {
+    color: transparent;
+  }
 }
 
 // Sort header
