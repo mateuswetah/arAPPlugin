@@ -22,7 +22,6 @@
 }
 
 footer {
-  min-height: 40px;
 }
 
 .page {
@@ -162,6 +161,10 @@ th {
 }
 
 // Action icons (e.g. print reports)
+.btn {
+  box-shadow: none !important;
+  text-shadow: none;
+}
 
 #action-icons {
 
@@ -536,7 +539,7 @@ div#content > table.table {
   }
 
   li {
-    padding: 4px 32px 4px 30px;
+    padding: 4px 48px 4px 30px;
     .text-overflow();
     position: relative;
 
@@ -557,7 +560,7 @@ div#content > table.table {
 
   // Facet counter
   .facet-count {
-    padding-left: 4px;
+    padding-left: 8px;
     position: absolute;
     right: 5px;
   }
@@ -635,28 +638,26 @@ div#content > table.table {
 }
 
 // Repository box
-
 .repository-logo {
 
   margin-top: 10px;
   margin-bottom: 20px;
 
   a {
-    color: @gray;
+    color: @white;
   }
 
   h2, img {
     max-width: 220px;
     padding: 8px;
     .box-sizing(border-box);
-    @shadow: 2px 2px 1px rgba(25, 25, 25, .2);
-    .box-shadow(@shadow);
-    background-color: @white;
+    box-shadow: none;
+    background-color: @blueDark;
     margin: 0;
   }
 
   h2 {
-    border: 8px solid @gray;
+    border: 8px solid @blueDark;
     font-size: 18px;
     line-height: 20px;
   }
@@ -670,7 +671,7 @@ div#content > table.table {
 
 .repository-logo-text h2 {
   min-height: 180px;
-  color: @gray;
+  color: @white;
 }
 
 // Actions section
@@ -820,8 +821,7 @@ div#content > table.table {
     font-size: @baseFontSize * 1.10;
     line-height: 38px;
     color: @blueDark;
-    border-top: 1px solid @borderLineColor;
-    border-bottom: 1px solid @borderLineColor;
+    border: none;
     margin: 0;
     padding: 0 10px;
   }
@@ -906,7 +906,7 @@ div#content > table.table {
       font-weight: normal;
       font-size: 13px;
       color: @grayLight;
-      border-right: 1px solid @borderLineColor;
+      border-right: 1px solid @blueDark;
 
     }
 
@@ -1267,10 +1267,12 @@ section .vcard:last-child > .field:last-child > div {
 // Digital object reference
 
 .digital-object-reference {
-
   background-color: @grayLighter;
   text-align: center;
   padding: @baseLineHeight;
+  box-shadow: inset 0px 1px 14px -10px #000;
+  max-height: 380px;
+  overflow-y: auto;
 
   .access-warning {
     text-align: left;
@@ -1474,10 +1476,9 @@ section .vcard:last-child > .field:last-child > div {
 
 #coverflow {
   padding-top: 20px;
-  background-color: @black;
-  background-color: rgba(0, 0, 0, .75);
+  background-color: @grayLighter;
   #imageflow_caption {
-    color: @white;
+    color: @grayDarker;
   }
   .imageflow .caption {
     font-weight: normal;
@@ -1488,17 +1489,17 @@ section .vcard:last-child > .field:last-child > div {
   }
   .result-count {
     margin: 0 0 10px 0;
-    color: @white;
+    color: @grayDarker;
     a {
-      border: 2px solid @white;
+      border: 2px solid @grayDarker;
       margin-left: 8px;
       padding: 4px;
       .border-radius(4px);
-      color: @white;
+      color: @grayDarker;
       font-size: 10px;
       &:hover {
-        background-color: @white;
-        color: @black;
+        background-color: @grayDarker;
+        color: @white;
       }
     }
   }
