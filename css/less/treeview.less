@@ -18,8 +18,7 @@
 @treeviewNodeBg: transparent;
 @treeviewNodeFg: @linkColor;
 @treeviewActiveNodeBg: darken(@grayLighter, 5%);
-@treeviewActiveNodeFg: @white;
-@treeviewAncestorNodeBg: darken(@blueDark, 5%);
+@treeviewAncestorNodeBg: @blue;
 @treeviewPlaceholderBg: #f0f0f0;
 
 #treeview {
@@ -53,7 +52,7 @@
 }
 
 #treeview li {
-  padding: 5px 0 5px 20px;
+  padding: 5px 12px 5px 30px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -80,11 +79,8 @@
 
 /* Tree node properties */
 
-#treeview .active {
+#treeview .active:not(.ancestor) {
   background-color: @treeviewActiveNodeBg !important;
-  a {
-    color: @treeviewActiveNodeFg;
-  }
 }
 
 #treeview .expand,
@@ -144,7 +140,7 @@
   padding: 4px 8px;
   font-weight: bold;
   background-color: darken(@grayLighter, 20%);
-  color: @black;
+  color: @grayDark;
   text-decoration: none;
   .border-radius(4px);
 }
@@ -166,17 +162,20 @@
 #treeview .root i {
   cursor: default !important;
 }
+#treeview .root {
+  background: @blueDark;
+}
 
 #treeview .ancestor i,
 #treeview .expand i {
   cursor: pointer;
 }
 
-#treeview .ancestor i { background-position: 0px 0px; } /* down arrow */
-#treeview .ancestor:hover i { background-position: -20px 0px; } /* right arrow */
-#treeview .expand i { background-position: -20px 0px; } /* right arrow */
-#treeview .expand:hover i { background-position: 0px 0px; } /* down arrow */
-#treeview .root:hover i { background-position: 0px 0px; } /* down arrow */
+#treeview .ancestor i { background-position: 0px -10px; } /* down arrow */
+#treeview .ancestor:hover i { background-position: -20px -10px; } /* right arrow */
+#treeview .expand i { background-position: -20px -10px; } /* right arrow */
+#treeview .expand:hover i { background-position: 0px -10px; } /* down arrow */
+#treeview .root:hover i { background-position: 0px -10px; } /* down arrow */
 
 #treeview .levelOfDescription {
   margin-right: 4px;
