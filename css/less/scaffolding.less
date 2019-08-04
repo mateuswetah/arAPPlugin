@@ -250,6 +250,9 @@ th {
     color: white;
     background: transparent;
   }
+  a {
+    margin: 0;
+  }
 }
 
 .digitalobject .brick {
@@ -271,6 +274,10 @@ th {
 
   &.masonry-brick {
     display: block;
+
+    a {
+      margin-bottom: 0px;
+    }
   }
 
   &.brick-only-text {
@@ -1246,7 +1253,7 @@ section .vcard:last-child > .field:last-child > div {
   }
 
   .creation-details {
-    color: @grayLight;
+    color: @gray;
     font-size: @baseFontSize * 0.90;
     margin-top: 10px;
   }
