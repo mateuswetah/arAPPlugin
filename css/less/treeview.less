@@ -82,9 +82,7 @@
 
 /* Tree node properties */
 
-#treeview .active:not(.ancestor),
-#treeview .active:not(.expand),
-#treeview .active:not(.root) {
+#treeview .active:not(.ancestor):not(.expand):not(.root) {
   background-color: @treeviewActiveNodeBg !important;
 }
 
