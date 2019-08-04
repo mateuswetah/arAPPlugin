@@ -57,6 +57,9 @@
   overflow: hidden;
   position: relative;
   background-color: @treeviewNodeBg;
+  border: 1px solid #aaa;
+  border-top: none;
+  border-bottom: none;
 
   a {
     font-style: italic;
@@ -68,6 +71,7 @@
 
   &:last-of-type {
     border-radius: 0 0 4px 4px;
+    border-bottom: 1px solid #aaa;
   }
 }
 
@@ -98,6 +102,7 @@
 #treeview .ancestor {
   padding-left: 8px;
   background-color: @treeviewAncestorNodeBg;
+  border-color: @treeviewAncestorNodeBg;
   color: white;
   a,i,span {
     color: white;
@@ -169,6 +174,7 @@
 }
 #treeview .root {
   background: @blueDark;
+  border-color: @blueDark;
 }
 
 #treeview .ancestor i,
