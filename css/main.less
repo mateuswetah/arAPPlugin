@@ -508,10 +508,21 @@ header #logo{
 .navbar-static-top .container, 
 .navbar-fixed-top .container, 
 .navbar-fixed-bottom .container {
-  .span3 {
-    width: 100% !important;
-    #treeview {
-      max-height: 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+
+  & > .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .span3 {
+      width: 100% !important;
+      #treeview {
+        max-height: 200px;
+      }
     }
   }
   #main-column > .row .span2 {
@@ -524,15 +535,8 @@ header #logo{
   .navbar-static-top .container, 
   .navbar-fixed-top .container, 
   .navbar-fixed-bottom .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 24px;
-    box-sizing: border-box;
 
     & > .row {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
 
       .span9 {
         width: 100%;
