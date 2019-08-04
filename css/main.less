@@ -522,7 +522,7 @@ body.index .navbar-fixed-bottom .container {
   box-sizing: border-box;
 
   & > .row {
-
+    
     .span9 {
       width: 100%;
       margin-right: 186px;
@@ -586,7 +586,23 @@ body.index .navbar-fixed-bottom .container {
   }
 }
 
-@media (min-width: 1024px){ 
+@media (min-width: 1024px) { 
+  body:not(.home) .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
+  
+    & > .row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+  
+      .span9 {
+        width: 100%;
+      }
+    }
+  }
  body.index .container, 
  body.index .navbar-static-top .container, 
  body.index .navbar-fixed-top .container, 
