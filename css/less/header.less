@@ -42,6 +42,9 @@
 header #logo {
   display: block;
   margin: 0 20px 0 8px;
+  @media screen and (max-width: 560px) {
+    margin-top: -24px;
+  }
 }
 
 #site-name {
@@ -62,9 +65,9 @@ header #logo {
   }
 
   @media screen and (max-width: 560px) {
-      margin: 12px 0 0 0;
+      margin: 25px 0 0 0 !important;
       padding: 0;
-      border-bottom: none;
+      border-bottom: none !important;
   }
 }
 
@@ -602,8 +605,8 @@ nav > div {
     clear: both;
   }
 
-  #search-bar {
-    margin-bottom: 10px;
+  button.top-item {
+    width: 36px;
   }
 
   nav > div {
