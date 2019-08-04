@@ -164,6 +164,11 @@ th {
 .btn {
   box-shadow: none !important;
   text-shadow: none;
+
+  &:before,
+  &:after {
+    color: black;
+  }
 }
 
 #action-icons {
@@ -640,15 +645,13 @@ div#content > table.table {
 // Repository box
 .repository-logo {
 
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin: 12px 12px 24px 12px;
 
   a {
     color: @white;
   }
 
   h2, img {
-    max-width: 220px;
     padding: 8px;
     .box-sizing(border-box);
     box-shadow: none;
@@ -663,7 +666,6 @@ div#content > table.table {
   }
 
   img {
-    background-color: @gray;
     width: 100%;
   }
 
