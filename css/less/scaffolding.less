@@ -1517,9 +1517,19 @@ section .vcard:last-child > .field:last-child > div {
 }
 
 #repository-banner {
-  margin-bottom: @baseLineHeight;
-  img {
-    .border-radius(4px);
+  margin: 12px 0 24px 0;
+
+  .span7 {
+    float: none;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+
+    img {
+      .border-radius(0px);
+      margin-top: 12px;
+      min-width: 100%;
+    }
   }
 }
 

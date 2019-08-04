@@ -621,6 +621,31 @@ h1 {
     width: calc(~'100% - 37px');
   }
 
+  button {
+    background-color: @blueDark;
+    color: white;
+    width: 50px;
+    border-radius: 8px;
+    min-height: 40px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    margin-left: -5px;
+
+    &:hover {
+      background-color: lighten(@blueDark, 5%);
+    }
+
+    &:before {
+      font-family: FontAwesome;
+      content:"\f002";
+    }
+
+    span {
+      .hide();
+    }
+  }
+
   div {
     width: 100%;
   }
