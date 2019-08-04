@@ -518,8 +518,19 @@ header #logo{
     justify-content: center;
     align-items: flex-start;
 
+    .span9 {
+      width: 100%;
+      margin-right: 186px;
+      
+      #main-column > .row {
+        margin: 0;
+        .span7 {
+          width: 100%;
+        }
+      }
+    }
     .span3 {
-      width: 100% !important;
+      width: 100%;
       #treeview {
         max-height: 200px;
       }
@@ -539,15 +550,9 @@ header #logo{
     & > .row {
 
       .span9 {
-        width: 100%;
-        margin-right: 186px;
 
         #main-column > .row {
-          margin: 0;
           .span7 {
-            width: 100%;
-            margin: 0;
-
             #content {
               display: flex;
               flex-wrap: wrap;
