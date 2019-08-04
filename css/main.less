@@ -504,15 +504,24 @@ header #logo{
     align-items: flex-end;
     text-align: right;
     line-height: 1.75rem;
+    opacity: 1.0;
+    transition: opacity ease 0.5s;
 
     i {
       color: white;
       float: right;
     }
 
+    &:hover {
+      opacity: 0.92;
+    }
+
     a, 
     a:hover,
-    a:visited {
+    a:visited,
+    & span,
+    &:hover span,
+    &:visited span {
       font-size: 24px;
       color: white;
       cursor: pointer;
