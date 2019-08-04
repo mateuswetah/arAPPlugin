@@ -514,9 +514,6 @@ header #logo{
   box-sizing: border-box;
 
   & > .row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 
     .span9 {
       width: 100%;
@@ -553,6 +550,9 @@ header #logo{
   .navbar-fixed-bottom .container {
 
     & > .row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
 
       .span9 #main-column > .row .span2{
         width: 150px !important;
@@ -570,11 +570,18 @@ header #logo{
   .navbar-static-top .container, 
   .navbar-fixed-top .container, 
   .navbar-fixed-bottom .container {
-    .span3 {
-      width: 340px !important;
-    }
-    #main-column > .row .span2 {
-      width: 174px !important;
+
+    & > .row {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      .span3 {
+        width: 340px !important;
+      }
+      #main-column > .row .span2 {
+        width: 174px !important;
+      }
     }
   }
 }
