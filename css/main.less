@@ -487,15 +487,20 @@ header #logo{
   margin: 20px -32px;
 
   .home-box {
-    height: 220px;
+    height: 200px;
+    min-width: 200px;
     flex-basis: 26%;
+    min-width: 200px;
     background: @blueDark;
-    border-radius: 3px;
+    background-size: cover;
+    border-radius: 4px;
     padding: 20px;
-    border: 2px solid white;
-    box-shadow: 0px 0px 0px 8px @blueDark;
+    border: 11px solid transparent;
+    box-shadow: inset 0px 0px 0px 2px #fff;
     margin: 20px;
     color: white;
+    display: flex;
+    align-items: flex-end;
 
     i {
       color: white;
