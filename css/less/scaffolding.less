@@ -1309,6 +1309,7 @@ section .vcard:last-child > .field:last-child > div {
 .browse-options {
   margin: 18px 12px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
@@ -1334,6 +1335,9 @@ section .vcard:last-child > .field:last-child > div {
     &:hover > i {
       color: @blueDark;
     }
+  }
+  .pickers>div{
+    margin: 0 6px;
   }
 }
 
