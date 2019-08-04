@@ -17,7 +17,7 @@
 
 @treeviewNodeBg: transparent;
 @treeviewNodeFg: @linkColor;
-@treeviewActiveNodeBg: darken(@grayLighter, 5%);
+@treeviewActiveNodeBg: @grayLighter;
 @treeviewAncestorNodeBg: @blue;
 @treeviewPlaceholderBg: #f0f0f0;
 
@@ -58,6 +58,10 @@
   overflow: hidden;
   position: relative;
   background-color: @treeviewNodeBg;
+
+  a {
+    font-style: italic;
+  }
 }
 
 /* Loading status */
@@ -85,7 +89,7 @@
 
 #treeview .expand,
 #treeview .ancestor {
-  padding-left: 0px;
+  padding-left: 8px;
 }
 
 #treeview .ancestor {
@@ -96,9 +100,6 @@
   }
   .levelOfDescription {
     font-weight: bold;
-  }
-  a {
-    font-style: italic;
   }
 }
 

@@ -102,10 +102,11 @@ th {
 .breadcrumb {
 
   padding: 0;
-  margin: 2px 0 6px 0;
+  margin: 6px;
   background: none;
   border: none;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
   .clearfix();
 
   ul {
@@ -123,7 +124,7 @@ th {
   li:after {
     content: "\f101";
     font-family: 'FontAwesome';
-    color: @blueDark;
+    color: @grayDarker;
     position: absolute;
     top: 3px;
     right: -10px;
@@ -182,6 +183,8 @@ th {
       margin: 6px 0;
       h4 {
         margin: 0;
+        color: @blueDark;
+        font-size: 1.15rem;
       }
     }
   }
@@ -199,7 +202,7 @@ th {
 
     i {
       font-size: 14px;
-      color: @grayLight;
+      color: @black;
       margin-right: 4px;
     }
 
@@ -820,7 +823,8 @@ div#content > table.table {
   section > h2,
   section > a > h2,
   section > span > h2 {
-    font-size: @baseFontSize * 1.10;
+    font-size: @baseFontSize * 1.25;
+    font-weight: normal;
     line-height: 38px;
     color: @blueDark;
     border: none;
@@ -908,7 +912,7 @@ div#content > table.table {
       font-weight: normal;
       font-size: 13px;
       color: @grayLight;
-      border-right: 1px solid @blueDark;
+      border-right: 2px solid @blue;
 
     }
 
