@@ -82,16 +82,14 @@
 
 /* Tree node properties */
 
-#treeview .active:not(.ancestor) {
+#treeview .active:not(.ancestor),
+#treeview .active:not(.expand) {
   background-color: @treeviewActiveNodeBg !important;
 }
 
 #treeview .expand,
 #treeview .ancestor {
   padding-left: 8px;
-}
-
-#treeview .ancestor {
   background-color: @treeviewAncestorNodeBg;
   color: white;
   a,i,span {
@@ -170,9 +168,6 @@
 #treeview .expand i {
   cursor: pointer;
 }
-
-#treeview :not(.ancestor) i { background-position: 0px 0px; } /* down arrow */
-#treeview :not(.ancestor):hover i { background-position: -20px 0px; } /* right arrow */
 
 #treeview .ancestor i { background-position: 0px -10px; } /* down arrow */
 #treeview .ancestor:hover i { background-position: -20px -10px; } /* right arrow */
