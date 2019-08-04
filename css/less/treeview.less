@@ -171,6 +171,9 @@
   cursor: pointer;
 }
 
+#treeview :not(.ancestor) i { background-position: 0px 0px; } /* down arrow */
+#treeview :not(.ancestor):hover i { background-position: -20px 0px; } /* right arrow */
+
 #treeview .ancestor i { background-position: 0px -10px; } /* down arrow */
 #treeview .ancestor:hover i { background-position: -20px -10px; } /* right arrow */
 #treeview .expand i { background-position: -20px -10px; } /* right arrow */
