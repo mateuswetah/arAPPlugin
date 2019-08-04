@@ -621,23 +621,24 @@ h1 {
   }
 
   button {
+    display: block;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    position: absolute;
+    top: 0px;
     background-color: @blueDark;
     color: white;
-    width: 50px;
-    border-radius: 8px;
-    min-height: 40px;
-    text-decoration: none;
+    margin-top: 0px;
+    font-size: 1.1em;
     border: none;
-    outline: none;
-    margin-left: -5px;
-
-    &:hover {
-      background-color: lighten(@blueDark, 5%);
-    }
+    .border-radius(0 4px 4px 0);
 
     &:before {
       font-family: FontAwesome;
       content:"\f002";
+      color: b9d8eb;
+      font-size: 20px;
     }
 
     span {

@@ -165,6 +165,8 @@ th {
 .btn {
   box-shadow: none !important;
   text-shadow: none;
+  background-image: none;
+  border: none;
 
   &:before,
   &:after {
@@ -879,7 +881,9 @@ div#content > table.table {
       padding-bottom: 4px;
   }
 
-  > section {
+  > section,
+  > .digitalObjectMetadata,
+  > .digitalObjectRights {
     margin-top: 24px;
 
     &>span>h2 {
