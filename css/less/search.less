@@ -70,7 +70,7 @@ h1 {
   padding: 5px 0 5px 0;
   border-radius: 3px;
   color: @black;
-  background: @grayLight;
+  background: @grayLighter;
 
   &:before, &:after {
     padding: 0 10px 0 10px;
@@ -81,7 +81,7 @@ h1 {
   }
 
   &:hover {
-    background-color: @grayLighter;
+    background-color: @grayLight;
     color: @blueDark;
     cursor: pointer;
   }
@@ -304,6 +304,7 @@ h1 {
   }
 
   .actions {
+    margin-top: 0px;
     margin-bottom: 40px;
     .border-radius(0px);
     padding-left: 20px;
@@ -319,12 +320,22 @@ h1 {
     }
     input.c-btn-submit {
       width: 100%;
-      border-radius: 0;
     }
     input.c-btn-delete {
       margin-bottom: 16px;
       background-color: @grayLight;
       color: @black;
+    }
+
+    @media screen and (max-width: 768px){
+      margin-left: 0;
+      margin-right: 0;
+      input {
+        width: 30%;
+      }
+      input.c-btn-submit {
+        width: 100%;
+      }
     }
   }
 
@@ -601,6 +612,8 @@ h1 {
 // Similar to #content
 .advanced-search-section {
   margin: 12px;
+  background: @graySilver;
+  border-radius: 0 0 4px 4px;
 }
 
 #advanced-repository-filters {
