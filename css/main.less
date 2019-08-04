@@ -358,20 +358,25 @@ header #logo{
   h1 {
     color: @headingsColor;
     margin-left: 42px;
+    margin-right: 12px;
+    margin-top: 24px;
   }
   h2,
   h4 {
     color: #313131;
     margin-left: 42px;
+    margin-right: 12px;
   }
   h3 {
     color: @blueDark;
     margin-left: 42px;
+    margin-right: 12px;
   }
   h5,
   h6 {
     color: #13505b;
     margin-left: 42px;
+    margin-right: 12px;
   }
 }
 
@@ -512,10 +517,10 @@ header #logo{
 
 }
 
-.container, 
-.navbar-static-top .container, 
-.navbar-fixed-top .container, 
-.navbar-fixed-bottom .container {
+body.index .container, 
+body.index .navbar-static-top .container, 
+body.index .navbar-fixed-top .container, 
+body.index .navbar-fixed-bottom .container {
   width: 100%;
   margin: 0 auto;
   padding: 0 24px;
@@ -549,10 +554,10 @@ header #logo{
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
-  .container, 
-  .navbar-static-top .container, 
-  .navbar-fixed-top .container, 
-  .navbar-fixed-bottom .container {
+  body.index .container, 
+  body.index .navbar-static-top .container, 
+  body.index .navbar-fixed-top .container, 
+  body.index .navbar-fixed-bottom .container {
 
     & > .row {
       display: flex;
@@ -572,10 +577,10 @@ header #logo{
 }
 
 @media (min-width: 1024px){ 
-  .container, 
-  .navbar-static-top .container, 
-  .navbar-fixed-top .container, 
-  .navbar-fixed-bottom .container {
+ body.index .container, 
+ body.index .navbar-static-top .container, 
+ body.index .navbar-fixed-top .container, 
+ body.index .navbar-fixed-bottom .container {
 
     & > .row {
       display: flex;
