@@ -101,6 +101,10 @@ body:not(.home) #top-bar #header-branding-region {
 }
 body:not(.home) #logo img{
   height: 110px;
+
+  @media screen and (max-width: 560px) {
+    display: none;
+  }
 }
 
 // Hidding browse by section.
@@ -346,10 +350,6 @@ header #logo{
   height: 162px;
   width: auto;
   display: block;
-
-  @media screen and (max-width: 560px) {
-    display: none;
-  }
 }
 
 #wrapper {
