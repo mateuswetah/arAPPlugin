@@ -1522,12 +1522,21 @@ section .vcard:last-child > .field:last-child > div {
 #coverflow {
   padding-top: 20px;
   background-color: @grayLighter;
+  box-shadow: inset 0px 11px 10px -10px #bbb, inset 0px -11px 10px -10px #bbb;
+
   #imageflow_caption {
     color: @grayDarker;
   }
   .imageflow .caption {
     font-weight: normal;
     font-family: @sansBoldFontFamily;
+  }
+  .imageflow .slider {
+    background-color: @grayDark;
+    border-radius: 12px;
+  }
+  .images img {
+    box-shadow: 0 1px 10px -6px #000;
   }
   img {
     cursor: pointer !important
