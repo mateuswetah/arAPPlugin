@@ -504,6 +504,25 @@ header #logo{
 
 }
 
+.container, 
+.navbar-static-top .container, 
+.navbar-fixed-top .container, 
+.navbar-fixed-bottom .container {
+  .span3 {
+    width: 220px;
+  }
+}
+@media (min-width: 1024px){ 
+  .container, 
+  .navbar-static-top .container, 
+  .navbar-fixed-top .container, 
+  .navbar-fixed-bottom .container {
+    .span3 {
+      width: 340px;
+    }
+  }
+}
+
 @media (min-width: 768px){
   .container, 
   .navbar-static-top .container, 
@@ -542,9 +561,6 @@ header #logo{
         }
       }
     }
-  }
-  .span3 {
-    width: 350px;
   }
 }
 
