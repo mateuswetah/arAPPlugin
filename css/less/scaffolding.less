@@ -58,12 +58,12 @@ a:hover {
   margin: 18px 12px;
 
   img {
-    float: left;
-    margin-right: 8px;
+    display: none;
   }
   h1 {
     line-height: 24px;
     margin-bottom: 0;
+    margin-left: 0;
   }
   .sub {
     margin-top: 4px;
@@ -444,6 +444,7 @@ div#content > table.table {
   h2 {
     margin-left: 0 !important;
     padding-left: 24px;
+    line-height: 32px;
   }
 }
 
@@ -1313,11 +1314,16 @@ section .vcard:last-child > .field:last-child > div {
     text-align: left;
   }
 
+  @media screen and (max-width: 768px) {
+    margin: 0 -12px;
+  }
+
 }
 
 // Horizontal space that takes the sort dropdown or a search bar in a browser
 
 .header-options {
+  padding: 0 12px;
   .clearfix();
 }
 
@@ -1768,10 +1774,13 @@ body.login #content {
 }
 
 // Responsive design
-
 @media (min-width: 768px) {
 
   #facets {
+    margin-top: 2px;
+    background: #ccc;
+    border-radius: 3px;
+
     .content {
       display: block !important;
     }
