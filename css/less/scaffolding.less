@@ -687,8 +687,7 @@ div#content > table.table {
 
   min-height: 28px;
   padding: 14px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 28px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -1309,16 +1308,20 @@ section .vcard:last-child > .field:last-child > div {
 
 .browse-options {
   margin: 18px 12px;
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
   line-height: 30px;
 
   .btn-group {
     vertical-align: top;
+    flex-shrink: 0;
   }
 
   > a {
-    padding-right: 10px;
+    padding-right: 5px;
+    flex-shrink: 0;
 
     i {
       font-size: 15px;
