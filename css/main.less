@@ -511,6 +511,9 @@ header #logo{
   .span3 {
     width: 220px !important;
   }
+  #main-column > .row .span2 {
+    width: 150px !important;
+  }
 }
 @media (min-width: 1024px){ 
   .container, 
@@ -519,6 +522,9 @@ header #logo{
   .navbar-fixed-bottom .container {
     .span3 {
       width: 340px !important;
+    }
+    #main-column > .row .span2 {
+      width: 174px !important;
     }
   }
 }
@@ -557,7 +563,16 @@ header #logo{
           .span2 {
             position: absolute;
             right: 24px;
+            width: 100% !important;
           }
+        }
+      }
+
+      .span3 {
+        width: 100% !important;
+
+        #treeview {
+          max-height: 200px;
         }
       }
     }
