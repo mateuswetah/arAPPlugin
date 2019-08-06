@@ -921,7 +921,7 @@ div#content > table.table {
 #content {
 
   .field {
-
+    min-width: 50%;
     overflow: hidden;
     margin-top: -1px;
 
@@ -965,7 +965,7 @@ div#content > table.table {
   // Fields within fields
 
   .field .field {
-
+    min-width: initial;
     > h3 {
       float: none;
       width: auto;
@@ -998,6 +998,7 @@ div#content > table.table {
 // .fields in forms
 
 form .field {
+  min-width: initial;
   overflow: auto !important;
   margin: 0 !important;
   h3 {
@@ -1176,6 +1177,7 @@ section .vcard:last-child > .field:last-child > div {
   // First result with digital objects
 
   &.media-summary {
+    width: 100%;
     color: @blueDark;
     font-size: 16px;
     a {
