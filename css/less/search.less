@@ -565,13 +565,18 @@ h1 {
   }
 
   button[type=submit],
-  .dropdown-toggle {
+  .dropdown-toggle,
+  .btn-group.open .dropdown-toggle {
     background: @blueDark;
     color: white;
     height: 32px;
 
     i::before { color: white; }
-    .caret { border-color: white; }
+    .caret { 
+      border-top: 4px solid white;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
     &:hover { background: @blueDark;}
   }
   .caret {
