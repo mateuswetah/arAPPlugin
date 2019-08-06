@@ -564,6 +564,16 @@ h1 {
     width: 60%;
   }
 
+  button[type=submit],
+  .dropdown-toggle {
+    background: @blueDark;
+    color: white;
+    height: 32px;
+
+    i::before { color: white; }
+    .caret { border-color: white; }
+    &:hover { background: @blueDark;}
+  }
   .caret {
     margin-left: 10px;
   }
